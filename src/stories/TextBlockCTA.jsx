@@ -25,10 +25,12 @@ export const TextBlockCTA = ({
 				body={body}
 				{...props}
 			/>
-			<div className="space-x-2">
-				<Button primary={true} size={size} label={label} {...props} />
-				<Button primary={false} size={size} label={label} {...props} />
-			</div>
+			{label && (
+				<div className="space-x-2">
+					<Button primary={true} size={size} label={label} {...props} />
+					<Button primary={false} size={size} label={label} {...props} />
+				</div>
+			)}
 		</div>
 	);
 };

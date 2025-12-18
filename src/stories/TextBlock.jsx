@@ -24,16 +24,24 @@ export const TextBlock = ({
 			<hgroup
 				className={["font-heading", headingSizeClass, spacingClass].join(" ")}
 			>
-				<p className={["font-heading text-xs"].join(" ")}>{kicker}</p>
-				<HeadingTag
-					className={["font-heading font-bold", headingSizeClass].join(" ")}
-				>
-					{heading}
-				</HeadingTag>
+				{kicker && (
+					<p className={["font-heading text-xs"].join(" ")}>{kicker}</p>
+				)}
+				{heading && (
+					<HeadingTag
+						className={["font-heading font-bold", headingSizeClass].join(" ")}
+					>
+						{heading}
+					</HeadingTag>
+				)}
 			</hgroup>
-			<p className={["font-display font-extralight", bodySizeClass].join(" ")}>
-				{body}
-			</p>
+			{body && (
+				<p
+					className={["font-display font-extralight", bodySizeClass].join(" ")}
+				>
+					{body}
+				</p>
+			)}
 		</div>
 	);
 };

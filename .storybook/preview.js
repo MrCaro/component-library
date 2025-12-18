@@ -19,7 +19,16 @@ const preview = {
 
 		options: {
 			storySort: {
-				order: ["Primitives", ["Button", "Add To Cart", "Text Block"]],
+				order: [
+					"Primitives",
+					[
+						"Button",
+						"Add To Cart",
+						"Text Block",
+						"Text Block with CTA",
+						"Price",
+					],
+				],
 			},
 		},
 	},

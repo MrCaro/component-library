@@ -12,6 +12,17 @@ export default {
 	},
 	// This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
 	tags: ["autodocs"],
+	args: { size: "lg", headingLevel: "h1" },
+	argTypes: {
+		size: {
+			control: { type: "select" },
+			options: ["lg", "md", "sm"],
+		},
+		headingLevel: {
+			control: { type: "select" },
+			options: ["h1", "h2", "h3", "h4", "h5", "h6"],
+		},
+	},
 };
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args

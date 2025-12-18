@@ -3,6 +3,7 @@ import { fn } from "storybook/test";
 import { Split5050 } from "./Split5050";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
 	title: "Marketing/Split 5050",
 	component: Split5050,
@@ -13,7 +14,17 @@ export default {
 	// This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
 	tags: ["autodocs"],
 	// Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#story-args
-	args: { onClick: fn() },
+	args: { onClick: fn(), size: "lg", headingLevel: "h1" },
+	argTypes: {
+		size: {
+			control: { type: "select" },
+			options: ["lg", "md", "sm"],
+		},
+		headingLevel: {
+			control: { type: "select" },
+			options: ["h1", "h2", "h3", "h4", "h5", "h6"],
+		},
+	},
 };
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args

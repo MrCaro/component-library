@@ -10,6 +10,7 @@ export const Media = ({
 	imageWrapperClass,
 	src,
 	alt,
+	imageClass,
 	...props
 }) => {
 	const isPlaceholder =
@@ -27,7 +28,7 @@ export const Media = ({
 			<Image
 				src={src || placeholderMedia}
 				alt={alt || "Image Caption"}
-				className={props.imageClass || "object-cover"}
+				className={["object-cover", imageClass].join(" ")}
 				fill={true}
 			/>
 		</div>

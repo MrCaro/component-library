@@ -13,7 +13,13 @@ export default {
 	// This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
 	tags: ["autodocs"],
 	// Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#story-args
-	args: { onClick: fn() },
+	args: { onClick: fn(), size: "lg" },
+	argTypes: {
+		size: {
+			control: { type: "select" },
+			options: ["lg", "md", "sm"],
+		},
+	},
 };
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args

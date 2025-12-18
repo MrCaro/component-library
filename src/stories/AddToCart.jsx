@@ -13,18 +13,20 @@ export const AddToCart = ({ primary, size, label, ...props }) => {
 		lg: "text-xl px-5 py-3",
 	}[size];
 	return (
-		<button
-			type="button"
-			className={[
-				"font-display relative isolate inline-flex cursor-pointer items-baseline justify-center rounded-lg border border-transparent font-semibold before:absolute before:inset-0 before:-z-10 before:rounded-[calc(var(--radius-lg)-1px)] before:shadow-sm after:absolute after:inset-0 after:-z-10 after:rounded-[calc(var(--radius-lg)-1px)] after:shadow-[inset_0_1px_--theme(--color-white/15%)] hover:after:bg-[color-mix(in_oklab,white_10%,transparent)]",
-				typeClass,
-				sizeClass,
-			].join(" ")}
-			{...props}
-			onClick={() => setIsLabelClicked(true)}
-		>
-			{isLabelClicked ? "Added!" : label}
-		</button>
+		label && (
+			<button
+				type="button"
+				className={[
+					"font-display relative isolate inline-flex cursor-pointer items-baseline justify-center rounded-lg border border-transparent font-semibold before:absolute before:inset-0 before:-z-10 before:rounded-[calc(var(--radius-lg)-1px)] before:shadow-sm after:absolute after:inset-0 after:-z-10 after:rounded-[calc(var(--radius-lg)-1px)] after:shadow-[inset_0_1px_--theme(--color-white/15%)] hover:after:bg-[color-mix(in_oklab,white_10%,transparent)]",
+					typeClass,
+					sizeClass,
+				].join(" ")}
+				{...props}
+				onClick={() => setIsLabelClicked(true)}
+			>
+				{isLabelClicked ? "Added!" : label}
+			</button>
+		)
 	);
 };
 
