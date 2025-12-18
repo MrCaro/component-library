@@ -3,12 +3,19 @@ import { fn } from "storybook/test";
 import { TextBlock } from "./TextBlock";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
 	title: "Primitives/Text Block",
 	component: TextBlock,
 	parameters: {
 		// Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
 		layout: "centered",
+		docs: {
+			description: {
+				component:
+					"A versatile Text Block component that allows you to display a kicker, heading, and body text with customizable sizes and heading levels. Ideal for showcasing information in a clean and structured manner.",
+			},
+		},
 	},
 	// This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
 	tags: ["autodocs"],

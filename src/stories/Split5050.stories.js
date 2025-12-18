@@ -10,6 +10,12 @@ export default {
 	parameters: {
 		// Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
 		layout: "centered",
+		docs: {
+			description: {
+				component:
+					"A versatile Split 50/50 component that divides the layout into two equal sections. Each section can contain text, images, or other content, allowing for a balanced and visually appealing presentation. The component supports various sizes (small, medium, large) and can be flipped to change the order of the sections.",
+			},
+		},
 	},
 	// This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
 	tags: ["autodocs"],

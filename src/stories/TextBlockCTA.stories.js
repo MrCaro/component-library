@@ -10,6 +10,12 @@ export default {
 	parameters: {
 		// Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
 		layout: "centered",
+		docs: {
+			description: {
+				component:
+					"A Text Block component that includes a Call to Action (CTA) section with buttons. It supports multiple sizes (small, medium, large) and allows customization of the kicker, heading, body text, and button labels. This component is designed to enhance user engagement by providing clear and concise information along with actionable buttons. This is an extension of the basic Text Block component, tailored for scenarios where user interaction is desired.",
+			},
+		},
 	},
 	// This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
 	tags: ["autodocs"],

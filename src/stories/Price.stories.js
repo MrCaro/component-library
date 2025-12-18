@@ -9,6 +9,12 @@ const meta = {
 	parameters: {
 		// Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
 		layout: "centered",
+		docs: {
+			description: {
+				component:
+					"A Price component that displays product pricing information in various formats. It supports multiple sizes (small, medium, large) and currencies (USD, EUR, GBP). The component is designed to be flexible and easily integrated into e-commerce applications, providing clear and concise pricing details to users.",
+			},
+		},
 	},
 	// This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
 	tags: ["autodocs"],

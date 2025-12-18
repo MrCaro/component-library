@@ -3,12 +3,19 @@ import { fn } from "storybook/test";
 import { Media } from "./Image";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
 	title: "Primitives/Image",
 	component: Media,
 	parameters: {
 		// Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
 		layout: "centered",
+		docs: {
+			description: {
+				component:
+					"An image component that supports different aspect ratios, including square (1:1) and video (16:9). It includes a placeholder option for loading states and is designed to be responsive and accessible.",
+			},
+		},
 	},
 	// This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
 	tags: ["autodocs"],

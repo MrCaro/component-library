@@ -10,6 +10,12 @@ export default {
 	parameters: {
 		// Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
 		layout: "centered",
+		docs: {
+			description: {
+				component:
+					"A comprehensive product card component that displays essential product information, including an image, title, price, and an 'Add to Cart' button. It is designed to be visually appealing and user-friendly, making it easy for customers to browse and select products.",
+			},
+		},
 	},
 	// This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
 	tags: ["autodocs"],

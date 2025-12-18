@@ -3,6 +3,7 @@ import { fn } from "storybook/test";
 import { AddToCart } from "./AddToCart";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
 	title: "Primitives/Add To Cart",
 	component: AddToCart,
@@ -11,7 +12,8 @@ export default {
 		layout: "centered",
 		docs: {
 			description: {
-				component: "A button component to add items to the shopping cart",
+				component:
+					"A button component to add items to the shopping cart. It supports multiple sizes (small, medium, large) and variants (primary, secondary) to accommodate various use cases. The button component is fully accessible and follows WCAG guidelines for interactive elements.",
 			},
 		},
 	},

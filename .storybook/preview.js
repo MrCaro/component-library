@@ -24,9 +24,9 @@ const preview = {
 					[
 						"Button",
 						"Add To Cart",
+						"Image",
 						"Text Block",
 						"Text Block with CTA",
-						"Price",
 					],
 				],
 			},

@@ -1,68 +1,66 @@
 import { fn } from "storybook/test";
 
-import { Button } from "./Button";
+import { Badge } from "./Badge";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-	title: "Primitives/Button",
-	component: Button,
+	title: "Primitives/Badge",
+	component: Badge,
 	parameters: {
 		// Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
 		layout: "centered",
 		docs: {
 			description: {
 				component:
-					"A generic button component that serves as the foundation for user interactions across the design system. It supports multiple sizes (small, medium, large) and variants (primary, secondary) to accommodate various use cases. The button component is fully accessible and follows WCAG guidelines for interactive elements.",
+					"A Badge component that displays a small, rounded label typically used to indicate status, categories, or counts. It supports multiple variants (e.g., primary, secondary, success, warning, error) and sizes (small, medium, large) to fit various design needs. The Badge component is designed to be easily customizable and accessible, ensuring it meets WCAG guidelines for readability and interaction.",
 			},
 		},
 	},
 	// This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
 	tags: ["autodocs"],
 	// Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#story-args
-	args: { onClick: fn(), size: "lg" },
+	args: { onClick: fn(), type: "success" },
 	argTypes: {
-		size: {
+		type: {
 			control: { type: "select" },
-			options: ["lg", "md", "sm"],
+			options: ["success", "warning", "error", "neutral", "friendly"],
 		},
 	},
 };
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Primary = {
+export const Success = {
 	args: {
-		primary: true,
-		label: "Click Me",
+		type: "success",
+		label: "Badge",
 	},
 };
 
-export const Secondary = {
+export const Warning = {
 	args: {
-		label: "Click Me",
+		type: "warning",
+		label: "Badge",
 	},
 };
 
-export const Large = {
+export const Error = {
 	args: {
-		primary: true,
-		size: "lg",
-		label: "Click Me",
+		type: "error",
+		label: "Badge",
 	},
 };
 
-export const Medium = {
+export const Neutral = {
 	args: {
-		primary: true,
-		size: "md",
-		label: "Click Me",
+		type: "neutral",
+		label: "Badge",
 	},
 };
 
-export const Small = {
+export const Friendly = {
 	args: {
-		primary: true,
-		size: "sm",
-		label: "Click Me",
+		type: "friendly",
+		label: "Badge",
 	},
 };
