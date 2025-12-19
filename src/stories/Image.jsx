@@ -36,13 +36,14 @@ export const Media = ({
 };
 
 Media.propTypes = {
+	placeholder: PropTypes.bool,
 	aspectVideo: PropTypes.bool,
 	src: PropTypes.string,
 	alt: PropTypes.string,
 };
 
 Media.defaultProps = {
-	isPlaceholder: false,
+	placeholder: false,
 	aspectVideo: false,
 	src: placeholderMedia,
 	alt: "Image Caption",
