@@ -10,6 +10,17 @@
 	--color-foreground: var(--foreground);
 	--font-heading: "Nunito Sans";
 	--font-display: "Nunito Sans";
+
+	--animate-scale-bounce: scale-bounce 0.5s ease-in-out;
+	@keyframes scale-bounce {
+		0%,
+		100% {
+			transform: scale(1);
+		}
+		50% {
+			transform: scale(0.75);
+		}
+	}
 }
 
 @media (prefers-color-scheme: dark) {
