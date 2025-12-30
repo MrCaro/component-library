@@ -45,7 +45,7 @@ export const Beanie = {
 		rating: 5,
 		aspectVideo: false,
 		size: "md",
-		kicker: "BEANIE",
+		category: "BEANIE",
 		heading: "Mocha White Gator Strip",
 		headingLevel: "h1",
 		price: 50,
@@ -53,27 +53,27 @@ export const Beanie = {
 		primary: true,
 		description:
 			"This classic beanie is made from soft, breathable fabric that provides warmth and comfort. Its versatile design makes it perfect for everyday wear, whether you're heading out for a casual stroll or hitting the slopes.",
+		atc: "Add to Cart",
 		colors: [
 			{
 				label: "Black",
-				color: "bg-[#885937] checked:outline-[#885937]",
+				color: "bg-[#885937] checked:outline-[#885937] hover:outline-[#885937]",
 				inStock: true,
 				checked: true,
 			},
 			{
 				label: "Gray",
-				color: "bg-[#110F19] checked:outline-[#110F19]",
+				color: "bg-[#110F19] checked:outline-[#110F19] hover:outline-[#110F19]",
 				inStock: true,
 				checked: false,
 			},
 			{
 				label: "Gray",
-				color: "bg-[#1A412A] checked:outline-[#1A412A]",
+				color: "bg-[#1A412A] checked:outline-[#1A412A] hover:outline-[#1A412A]",
 				inStock: true,
 				checked: false,
 			},
 		],
-		label: "Add to Cart",
 	},
 };
 
@@ -86,7 +86,7 @@ export const Shoes = {
 		rating: 4,
 		aspectVideo: false,
 		size: "md",
-		kicker: "LIFESTYLE SHOES",
+		category: "LIFESTYLE SHOES",
 		heading: "Jade Gator S26",
 		headingLevel: "h1",
 		price: 110,
@@ -94,16 +94,17 @@ export const Shoes = {
 		primary: true,
 		description:
 			"These lifestyle shoes combine comfort and style, featuring a sleek design with premium materials. Perfect for everyday wear, they provide excellent support and durability for all-day activities.",
+		atc: "Add to Cart",
 		colors: [
 			{
 				label: "Black",
-				color: "bg-[#4A5545] checked:outline-[#4A5545]",
+				color: "bg-[#4A5545] checked:outline-[#4A5545] hover:outline-[#4A5545]",
 				inStock: true,
 				checked: true,
 			},
 			{
 				label: "Gray",
-				color: "bg-[#C09C4F] checked:outline-[#C09C4F]",
+				color: "bg-[#C09C4F] checked:outline-[#C09C4F] hover:outline-[#C09C4F]",
 				inStock: true,
 				checked: false,
 			},
@@ -155,6 +156,5 @@ export const Shoes = {
 				checked: false,
 			},
 		],
-		label: "Add to Cart",
 	},
 };

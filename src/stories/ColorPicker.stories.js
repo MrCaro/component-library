@@ -27,13 +27,13 @@ export const InStock = {
 		options: [
 			{
 				label: "Black",
-				color: "bg-zinc-900 checked:outline-zinc-900",
+				color: "bg-zinc-900 checked:outline-zinc-900 hover:outline-zinc-900",
 				inStock: true,
 				checked: true,
 			},
 			{
 				label: "Gray",
-				color: "bg-zinc-500 checked:outline-zinc-500",
+				color: "bg-zinc-500 checked:outline-zinc-500 hover:outline-zinc-500",
 				inStock: true,
 				checked: false,
 			},
@@ -46,13 +46,13 @@ export const OutStock = {
 		options: [
 			{
 				label: "Black",
-				color: "bg-zinc-900 checked:outline-zinc-900",
+				color: "bg-zinc-900 checked:outline-zinc-900 hover:outline-zinc-900",
 				inStock: true,
 				checked: true,
 			},
 			{
 				label: "Gray",
-				color: "bg-zinc-500 checked:outline-zinc-500",
+				color: "bg-zinc-500 checked:outline-zinc-500 hover:outline-zinc-500",
 				inStock: false,
 				checked: false,
 			},

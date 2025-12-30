@@ -17,7 +17,7 @@ export const ColorPicker = ({ options, ...props }) => {
 							)}
 							<input
 								className={[
-									"size-5 cursor-pointer appearance-none rounded-full outline-offset-2 forced-color-adjust-none checked:outline-2 checked:outline-offset-2 focus-visible:outline-3 focus-visible:outline-offset-3 disabled:cursor-not-allowed disabled:opacity-50",
+									"size-5 cursor-pointer appearance-none rounded-full outline-offset-2 transition-all duration-150 ease-in-out forced-color-adjust-none checked:outline-2 checked:outline-offset-2 hover:outline-2 focus-visible:outline-3 focus-visible:outline-offset-3 disabled:cursor-not-allowed disabled:opacity-50",
 									color,
 								].join(" ")}
 								defaultValue={label}

@@ -15,15 +15,15 @@ export const ProductOverview = ({
 	rating,
 	aspectVideo,
 	size,
-	kicker,
+	category,
 	heading,
 	description,
 	currency,
 	price,
 	primary,
+	atc,
 	colors,
 	sizes,
-	label,
 	...props
 }) => {
 	return (
@@ -46,13 +46,13 @@ export const ProductOverview = ({
 				<div className="flex flex-wrap items-start justify-between gap-y-2">
 					<TextBlockCTA
 						size={size}
-						kicker={kicker}
+						kicker={category}
 						heading={heading}
 						{...props}
 					/>
 					<Price size={size} currency={currency} price={price} {...props} />
 				</div>
-				<AddToCart label={label} primary={primary} size={size} />
+				<AddToCart label={atc} primary={primary} size={size} />
 				{colors && (
 					<div>
 						<p className="font-display mb-1 font-bold">Color</p>
