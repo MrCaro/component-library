@@ -5,7 +5,7 @@ import { Reviews } from "./Reviews";
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-	title: "Primitives/Reviews",
+	title: "ECommerce/Reviews",
 	component: Reviews,
 	parameters: {
 		// Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout

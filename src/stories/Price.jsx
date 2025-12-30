@@ -5,10 +5,9 @@ export const Price = ({ size, currency, price, ...props }) => {
 	const priceSizeClass = { sm: "text-sm", md: "text-lg", lg: "text-3xl" }[size];
 	return (
 		<span
-			className={[
-				"font-display font-medium text-zinc-500",
-				priceSizeClass,
-			].join(" ")}
+			className={["font-display font-bold text-zinc-900", priceSizeClass].join(
+				" "
+			)}
 			{...props}
 		>
 			{new Intl.NumberFormat("en-IN", {

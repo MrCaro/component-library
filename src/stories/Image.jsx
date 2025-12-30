@@ -18,11 +18,13 @@ export const Media = ({
 	const aspectRatioClass = aspectVideo ? "aspect-video" : "aspect-square";
 	return (
 		<div
+			{...props}
 			className={[
 				"relative overflow-hidden rounded-lg",
 				aspectRatioClass,
 				isPlaceholder,
 				imageWrapperClass,
+				props.className,
 			].join(" ")}
 		>
 			<Image

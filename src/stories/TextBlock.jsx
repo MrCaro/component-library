@@ -37,7 +37,10 @@ export const TextBlock = ({
 			</hgroup>
 			{body && (
 				<p
-					className={["font-display font-extralight", bodySizeClass].join(" ")}
+					className={[
+						"font-display font-extralight text-zinc-600",
+						bodySizeClass,
+					].join(" ")}
 				>
 					{body}
 				</p>
